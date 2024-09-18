@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIMWebAPILocal", "PIMWebAPILocal.csproj", "{120D81A1-E202-46F3-B1DD-FF8C686C1AFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{120D81A1-E202-46F3-B1DD-FF8C686C1AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120D81A1-E202-46F3-B1DD-FF8C686C1AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120D81A1-E202-46F3-B1DD-FF8C686C1AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120D81A1-E202-46F3-B1DD-FF8C686C1AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6859ED8-7B93-45BB-8A19-DAC1A7F40AA4}
+	EndGlobalSection
+EndGlobal
