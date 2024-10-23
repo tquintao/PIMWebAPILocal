@@ -10,6 +10,18 @@ builder.Services.AddScoped<PIMWebAPILocal.Repositories.ClienteRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configuração de CORS para permitir acessos de qualquer origem
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
 var app = builder.Build();
 
 // Configuração do middleware do Swagger
@@ -18,6 +30,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Ativando o uso da política de CORS
+app.UseCors("AllowAll");
 
 // Middleware para roteamento
 app.UseHttpsRedirection();
